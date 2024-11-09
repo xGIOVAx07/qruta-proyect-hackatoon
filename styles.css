@@ -1,0 +1,179 @@
+/* Estilo general del body */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #00aaff; /* Texto en color azul claro */
+    font-family: Arial, sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #1e1e1e; /* Fondo oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra suave para el contenedor */
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #00aaff; /* Color azul */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos para los labels */
+label {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #00aaff;
+    display: block;
+}
+
+/* Estilos para los select */
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #00aaff;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: all 0.3s ease; /* Efecto de transición suave */
+}
+
+select:focus {
+    outline: none;
+    border-color: #0077cc; /* Color de borde al hacer foco */
+    background-color: #444; /* Fondo más claro al hacer foco */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #00aaff;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0077cc; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo para el cuadro de resultados */
+#result {
+    margin-top: 20px;
+    color: #00aaff;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para los títulos de las secciones de resultados */
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+/* Estilo para los elementos de texto dentro del #result */
+p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+/* Estilo del cuadro de historial */
+#history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #00aaff;
+    font-size: 1.1em;
+}
+
+#history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history li {
+    background-color: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilos adicionales para el área de recomendaciones */
+#recommendations {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #00aaff;
+    font-size: 1.2em;
+}
+
+#recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recommendations li {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Estilos de la parte de la credencial */
+#credentialOption {
+    margin-top: 15px;
+    color: #00aaff;
+}
+
+#credentialOption input {
+    margin-left: 10px;
+}
+
+/* Estilo para la hora estimada de llegada */
+#arrivalTime, #travelTime, #fare, #remainingTime {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: #00aaff;
+}
+
+/* Animación suave para el tiempo restante */
+@keyframes countdownAnimation {
+    0% { color: #fff; }
+    50% { color: #ffcc00; }
+    100% { color: #ff0000; }
+}
+
+#remainingTime p {
+    font-size: 1.5em;
+    animation: countdownAnimation 2s infinite;
+}
